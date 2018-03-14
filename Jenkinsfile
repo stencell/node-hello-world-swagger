@@ -20,10 +20,10 @@ pipeline {
         string(name: 'GIT_URL', defaultValue: 'https://github.com/stencell/node-hello-world-swagger.git', description: "Project Git URL)")
         string(name: 'GIT_BRANCH', defaultValue: 'master', description: "Git Branch (from Multibranch plugin if being used)")
         string(name: 'STI_IMAGE', defaultValue: 'openshift/nodejs:latest', description: "S2I Image to use for build")
-        string(name: 'DEV_PROJECT', defaultValue: 'dev-project', description: "Name of the Development namespace")
+        string(name: 'DEV_PROJECT', defaultValue: 'node-dev-project', description: "Name of the Development namespace")
         string(name: 'DEV_REPLICA_COUNT', defaultValue: '1', description: "Number of development pods we desire")
         string(name: 'DEV_TAG', defaultValue: 'latest', description: "Development tag")
-        string(name: 'TEST_PROJECT', defaultValue: 'test-project', description: "Name of the Test namespace")
+        string(name: 'TEST_PROJECT', defaultValue: 'node-test-project', description: "Name of the Test namespace")
         string(name: 'TEST_REPLICA_COUNT', defaultValue: '1', description: "Number of test pods we desire")
         string(name: 'TEST_TAG', defaultValue: 'test', description: "Test tag")
     }
